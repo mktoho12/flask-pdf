@@ -17,4 +17,4 @@ ADD font /usr/local/lib/python3.7/site-packages/fpdf/font
 ENV FLASK_APP app.py
 ENV FLASK_ENV development
 
-CMD ["flask", "run", "--host=0.0.0.0"]
+CMD flask run -h 0.0.0.0 -p $PORT
