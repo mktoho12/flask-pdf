@@ -12,6 +12,7 @@ ADD requirements.txt $project_dir
 WORKDIR $project_dir
 RUN pip install -r requirements.txt
 
+ADD src $project_dir
 ADD font /usr/local/lib/python3.7/site-packages/fpdf/font
 
 ENV FLASK_APP /app/app.py
