@@ -7,9 +7,10 @@ docker-compose build
 docker-compose up
 ```
 
-ブラウザで http://localhost:5000/pdf を開く
+ブラウザで http://localhost/pdf を開く
 
-WindowsでDocker Tollboxを使っている人は、以下のコマンドで仮想マシンのIPアドレスを調べて http://<IPアドレス>:5000/pdf を開く
+WindowsでDocker Tollboxを使っている人は、以下のコマンドで仮想マシンのIPアドレスを調べて  
+http://<IPアドレス>/pdf を開く
 
 ```
 docker-machine ip default
