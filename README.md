@@ -15,3 +15,9 @@ http://<IPアドレス>/pdf を開く
 ```
 docker-machine ip default
 ```
+
+## デモ
+
+PDFファイルがダウンロードされるだけ
+
+https://flask-fpdf.herokuapp.com/pdf
