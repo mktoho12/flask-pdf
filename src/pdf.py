@@ -12,7 +12,7 @@ def mkpdf():
   # Add a DejaVu Unicode font (uses UTF-8)
   # Supports more than 200 languages. For a coverage status see:
   # http://dejavu.svn.sourceforge.net/viewvc/dejavu/trunk/dejavu-fonts/langcover.txt
-  pdf.add_font('DejaVu', '', 'DejaVuSansCondensed.ttf', uni=True)
+  pdf.add_font('DejaVu', '', '/font/DejaVuSansCondensed.ttf', uni=True)
   pdf.set_font('DejaVu', '', 14)
   
   text = u"""
@@ -34,14 +34,14 @@ def mkpdf():
   # Supports: Bengali, Devanagari, Gujarati, 
   #           Gurmukhi (including the variants for Punjabi) 
   #           Kannada, Malayalam, Oriya, Tamil, Telugu, Tibetan
-  pdf.add_font('gargi', '', 'gargi.ttf', uni=True) 
+  pdf.add_font('gargi', '', '/font/gargi.ttf', uni=True) 
   pdf.set_font('gargi', '', 14)
   pdf.write(8, u'Hindi: नमस्ते दुनिया')
   pdf.ln(20)
   
   # Add a AR PL New Sung Unicode font (uses UTF-8)
   # The Open Source Chinese Font (also supports other east Asian languages)
-  pdf.add_font('fireflysung', '', 'fireflysung.ttf', uni=True)
+  pdf.add_font('fireflysung', '', '/font/fireflysung.ttf', uni=True)
   pdf.set_font('fireflysung', '', 14)
   pdf.write(8, u'Chinese: 你好世界\n')
   pdf.write(8, u'Japanese: こんにちは世界\n')
@@ -50,13 +50,13 @@ def mkpdf():
   # Add a Alee Unicode font (uses UTF-8)
   # General purpose Hangul truetype fonts that contain Korean syllable 
   # and Latin9 (iso8859-15) characters.
-  pdf.add_font('eunjin', '', 'Eunjin.ttf', uni=True)
+  pdf.add_font('eunjin', '', '/font/Eunjin.ttf', uni=True)
   pdf.set_font('eunjin', '', 14)
   pdf.write(8, u'Korean: 안녕하세요')
   pdf.ln(20)
   
   # Add a Fonts-TLWG (formerly ThaiFonts-Scalable) (uses UTF-8)
-  pdf.add_font('waree', '', 'Waree.ttf', uni=True)
+  pdf.add_font('waree', '', '/font/Waree.ttf', uni=True)
   pdf.set_font('waree', '', 14)
   pdf.write(8, u'Thai: สวสดชาวโลก')
   pdf.ln(20)
